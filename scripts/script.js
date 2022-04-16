@@ -1,5 +1,5 @@
 window.onload=()=>{
-function(n=5000){
+(function load1(n=5000){
     let h=new Peculiar.int("gold",100,"grey","column","20px");
     h.start();
     h.addText("Loading");
@@ -51,7 +51,7 @@ p("#literature").on("click",()=>{
     });
 p("#chemistry").on("click",()=>{
     p("#sidebar-container").hide();
-    function(n=5000){
+   (function load2(n=5000){
     let h=new Peculiar.int("Indigo",100,"grey","column","20px");
     h.start();
     h.addText("Loading");
@@ -72,7 +72,7 @@ showGov();
     
 p("#english").on("click",()=>{
   //  updateTimer();
-  (function(n=5000){
+  (function load3(n=5000){
     let h=new Peculiar.int("orange",100,"grey","column","20px");
     h.start();
     h.addText("Loading");
@@ -86,7 +86,7 @@ p("#english").on("click",()=>{
     });
     p("#spelling").on("click",()=>{
         startSpelling();
-     (function(n=5000){
+     (function load(n=5000){
     let h=new Peculiar.int("gold",100,"grey","column","20px");
     h.start();
     h.addText("Loading");

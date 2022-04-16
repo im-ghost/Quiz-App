@@ -893,8 +893,8 @@ function startSpelling(){
     textForm.classList.add("container");
     textForm.classList.add("innerques");
     textForm.innerHTML=`
-    <input placeholder="Type the word" id="spellValue" type="text" autocapitalization="off" autocomplete="off"/><br><br>
-    <button id="checkSpell">Next</button>
+    <input style="outline:none;margin-top:50%;" placeholder="Type the word" id="spellValue" type="text" autocapitalization="off" autocomplete="off"/><br><br>
+    <button class="btn" id="checkSpell">Next</button>
     
     `
     questionEl.appendChild(textForm);

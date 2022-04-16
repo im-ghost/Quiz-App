@@ -2,14 +2,14 @@ const cacheName = 'Quiz-app';
 self.addEventListener('install', (e) => {
     e.waitUntil((async () => {
         const contentToCache=[
-        'https://peculiar-quiz-app.netlify.app/index.html',
-      'https://peculiar-quiz-app.netlify.app/scripts/script.js',
-      'https://peculiar-quiz-app.netlify.app/styles/style.css',
-      'https://peculiar-quiz-app.netlify.app/img5.jpg',
-      'https://peculiar-quiz-app.netlify.app/favecon.ico',
-      'https://peculiar-quiz-app.netlify.app/scripts/peculiar.js',
-      'https://peculiar-quiz-app.netlify.app/scripts/questions.js',
-      'https://peculiar-quiz-app.netlify.app/scripts/quiz.js',
+        'index.html',
+      'scripts/script.js',
+      'styles/style.css',
+      'img5.jpg',
+      'favecon.ico',
+      'scripts/peculiar.js',
+      'scripts/questions.js',
+      'scripts/quiz.js',
    
         ]
     const cache = await caches.open(cacheName);

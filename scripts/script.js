@@ -1,4 +1,13 @@
 window.onload=()=>{
+function(n=5000){
+    let h=new Peculiar.int("gold",100,"grey","column","20px");
+    h.start();
+    h.addText("Loading");
+    
+    h.animateText();
+    h.removeOnTouch();
+    h.remove(n)
+})();       
    if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('sw.js')
@@ -42,7 +51,15 @@ p("#literature").on("click",()=>{
     });
 p("#chemistry").on("click",()=>{
     p("#sidebar-container").hide();
-    Peculiar.load();
+    function(n=5000){
+    let h=new Peculiar.int("Indigo",100,"grey","column","20px");
+    h.start();
+    h.addText("Loading");
+    
+    h.animateText();
+    h.removeOnTouch();
+    h.remove(n)
+})();       
    // updateTimer();
     showChem();
     });
@@ -55,7 +72,15 @@ showGov();
     
 p("#english").on("click",()=>{
   //  updateTimer();
-  Peculiar.load();
+  (function(n=5000){
+    let h=new Peculiar.int("orange",100,"grey","column","20px");
+    h.start();
+    h.addText("Loading");
+    
+    h.animateText();
+    h.removeOnTouch();
+    h.remove(n)
+})();       
   p("#sidebar-container").hide();
     showEng()
     });

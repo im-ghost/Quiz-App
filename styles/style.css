@@ -160,5 +160,12 @@ text-align:center;
     accent-color:grey;
     
     }
-
+.flex{
+height:60vh;
+width:100%;
+display:flex;
+flex-flow:column wrap;
+align-items:center;
+justify-content:center;
+}
 

@@ -1,4 +1,3 @@
- 
 var questionEl=document.createElement("div");
 questionEl.classList.add("container")
 const showLit=()=>{
@@ -9,8 +8,7 @@ const showLit=()=>{
   },5000);
   var allLitQues=[];
 function getQuestion(){
-    questionEl.innerHTML="";
-    
+    questionEl.innerHTML="";  
       var a=Object.values(Object.values(literature.questions)[i]);    
     var eachQuestion=document.createElement("div");
     eachQuestion.setAttribute("id","each");
@@ -20,8 +18,7 @@ function getQuestion(){
     <div class="container options">
     <div class="each_options">
       <input type="radio" value="${a[1][0]}" name="options"/>
-    <label for="opt1">${a[1][0]}</label>
-  
+    <label for="opt1">${a[1][0]}</label> 
     </div>
      <div class="each_options">
     <input name="options" type="radio" value="${a[1][1]}"/>
@@ -892,6 +889,7 @@ function startSpelling(){
     var textForm=document.createElement("div");
     textForm.classList.add("container");
     textForm.classList.add("innerques");
+textForm.classList.add("flex");
     textForm.innerHTML=`
     <input style="outline:none;margin-top:50%;" placeholder="Type the word" id="spellValue" type="text" autocapitalization="off" autocomplete="off"/><br><br>
     <button class="btn" id="checkSpell">Next</button>
@@ -984,16 +982,16 @@ function speak(){
    var revoice=random(0,voices.length)
         utterThis.voice = voices[revoice];
         
-    utterThis.pitch = 1;
-    utterThis.rate = 1;
+    utterThis.pitch = 0.5;
+    utterThis.rate = 0.5;
     synth.speak(utterThis);
     setTimeout(()=>{
     synth.speak(utterThis);
-    },2000);
+    },6000);
   }
-
+setTimeout(()=>{
 speak();
-
+},5000);
 var score=0;
 setTimeout(()=>{
 elem("#checkSpell").addEventListener("click",()=>{
@@ -1025,92 +1023,5 @@ setTimeout(()=>{
             ..`
                `
                `
-               `
-               `
-      ________&         _
-
-
-
-
-
-
-
+             
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

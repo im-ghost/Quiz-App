@@ -1,0 +1,37 @@
+{
+  
+  "start_url": "index.html",
+  "name": "Peculiar Quiz App",
+  "short_name": "Quiz App",
+  "theme_color": "#676543",
+  "display": "standalone",
+  "background_color": "#345676",
+  "description": "A Quiz app.",
+  "icons": [{
+    "src": "img5.jpg",
+    "sizes": "48x48",
+    "type": "image/jpg"
+  }, {
+    "src": "img5.jpg",
+    "sizes": "72x72",
+    "type": "image/jpg"
+  }, {
+    "src": "img5.jpg",
+    "sizes": "96x96",
+    "type": "image/jpg"
+  }, {
+    "src": "imgs5.jpg",
+    "sizes": "144x144",
+    "type": "image/jpg"
+  }, {
+    "src": "img5.jpg",
+    "sizes": "168x168",
+    "type": "image/jpg"
+  }, {
+    "src": "images/touch/homescreen192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  
+  }],
+  "share_target": { "action": "/share", "params": { "title": "webapp", "text": "My web", "url": "script.js" } },
+}

@@ -1,5 +1,5 @@
 var questionEl=document.createElement("div");
-questionEl.classList.add("container")
+questionEl.classList.add("container");
 const showLit=()=>{
     var score=0;
   var i=0;
@@ -16,26 +16,31 @@ function getQuestion(){
     <h1>${a[0]}</h1>
     <div class="container options">
     <div class="each_options">
-    <div class="option" id="${a[1][0]}">${a[1][0]}</div> 
+      <input type="radio" value="${a[1][0]}" name="options"/>
+    <label for="opt1">${a[1][0]}</label> 
     </div>
      <div class="each_options">
-    <div value="${a[1][1]}" class="option" id="${a[1][1]}">${a[1][1]}</div>
+    <input name="options" type="radio" value="${a[1][1]}"/>
+    <label for="opt1">${a[1][1]}</label>
     </div>
      <div class="each_options">
-       <div class="option" id="${a[1][2]}"/>${a[1][2]}</div>
+       <input name="options" type="radio" value="${a[1][2]}"/>
+    <label for="opt1">${a[1][2]}</label>
   </div>
      <div class="each_options">
-         <div class="option" id="${a[1][3]}">${a[1][3]}</div>
+         <input name="options" type="radio" value="${a[1][3]}"/>
+    <label for="opt1">${a[1][3]}</label>
 
     </div>
     
     
     
-    </div>
+    
      <div class="controls">
      
      <div id="nexts"><button class="btn"id="next">Next</button></div>
     </div></div>
+    </div>
     </div>
     `
     function stopQuestion(){ 
@@ -64,24 +69,10 @@ function getQuestion(){
    function next(){
       
        if(i<Object.values(literature.questions).length-1){
-      var allOptions=pick(".option");
-      alert(allOptions.length);
-      allOptions.forEach(opt=>{
-          opt.addEventListener("click",()=>{
-              opt.classList.add("correct")
-              alert(opt+" "+ opt.textContent)
-              });
-      })
-      for(i=0;i<allOptions.length;i++){
-          allOptions[i].classList.remove("correct");
-          allOptions[i].addEventListener("click",()=>{
-              allOptions[i].classList.add("correct");
-              alert(allOptions[i].textContent);
-          });
-      } 
-      var choosenOption=pick(".correct");
-      alert(choosenOption.length);  
-     /* var answer=p("input[type=radio][name=options]:checked").val();
+            if(p("input[type=radio][name=options]:checked").val()!==null){
+      alert(p("input[type=radio][name=options]:checked").val());
+        
+      var answer=p("input[type=radio][name=options]:checked").val();
     alert(answer);
     
       
@@ -93,7 +84,7 @@ function getQuestion(){
       }
       else{
           alert("null");
-      }"*/
+      }
            i++;
            
             getQuestion();
@@ -106,8 +97,7 @@ function getQuestion(){
         
     }
 
-   
-   
+    
     questionEl.appendChild(eachQuestion);
     
     setTimeout(()=>{
@@ -202,28 +192,31 @@ function getQuestion(){
     <h1>${a[0]}</h1>
     <div class="container options">
     <div class="each_options">
-      <div class="option" id="${a[1][0]}">${a[1][0]}</div> 
-    </div>
-    </div>
-     <div class="each_options">
-    <div value="${a[1][1]}" class="options" id="${a[1][1]}">${a[1][1]}</div>
+      <input type="radio" value="${a[1][0]}" name="options"/>
+    <label for="opt1">${a[1][0]}</label> 
     </div>
      <div class="each_options">
-       <div id="${a[1][2]}"/>${a[1][2]}</div>
+    <input name="options" type="radio" value="${a[1][1]}"/>
+    <label for="opt1">${a[1][1]}</label>
+    </div>
+     <div class="each_options">
+       <input name="options" type="radio" value="${a[1][2]}"/>
+    <label for="opt1">${a[1][2]}</label>
   </div>
      <div class="each_options">
-         <div id="${a[1][3]}">${a[1][3]}</div>
-
+         <input name="options" type="radio" value="${a[1][3]}"/>
+    <label for="opt1">${a[1][3]}</label>
 
     </div>
     
     
     
-    </div>
+    
      <div class="controls">
      
      <div id="nexts"><button class="btn"id="next">Next</button></div>
     </div></div>
+    </div>
     </div>
     `
     function stopQuestion(){ 
@@ -375,28 +368,31 @@ function getQuestion(){
     <h1>${a[0]}</h1>
     <div class="container options">
     <div class="each_options">
-      <div class="option" id="${a[1][0]}">${a[1][0]}</div> 
-    </div>
-    </div>
-     <div class="each_options">
-    <div value="${a[1][1]}" class="options" id="${a[1][1]}">${a[1][1]}</div>
+      <input type="radio" value="${a[1][0]}" name="options"/>
+    <label for="opt1">${a[1][0]}</label> 
     </div>
      <div class="each_options">
-       <div id="${a[1][2]}"/>${a[1][2]}</div>
+    <input name="options" type="radio" value="${a[1][1]}"/>
+    <label for="opt1">${a[1][1]}</label>
+    </div>
+     <div class="each_options">
+       <input name="options" type="radio" value="${a[1][2]}"/>
+    <label for="opt1">${a[1][2]}</label>
   </div>
      <div class="each_options">
-         <div id="${a[1][3]}">${a[1][3]}</div>
-
+         <input name="options" type="radio" value="${a[1][3]}"/>
+    <label for="opt1">${a[1][3]}</label>
 
     </div>
     
     
     
-    </div>
+    
      <div class="controls">
      
      <div id="nexts"><button class="btn"id="next">Next</button></div>
     </div></div>
+    </div>
     </div>
     `
     function stopQuestion(){ 
@@ -548,28 +544,31 @@ const showChem=()=>{
     <h1>${a[0]}</h1>
     <div class="container options">
     <div class="each_options">
-      <div class="option" id="${a[1][0]}">${a[1][0]}</div> 
-    </div>
-    </div>
-     <div class="each_options">
-    <div value="${a[1][1]}" class="options" id="${a[1][1]}">${a[1][1]}</div>
+      <input type="radio" value="${a[1][0]}" name="options"/>
+    <label for="opt1">${a[1][0]}</label> 
     </div>
      <div class="each_options">
-       <div id="${a[1][2]}"/>${a[1][2]}</div>
+    <input name="options" type="radio" value="${a[1][1]}"/>
+    <label for="opt1">${a[1][1]}</label>
+    </div>
+     <div class="each_options">
+       <input name="options" type="radio" value="${a[1][2]}"/>
+    <label for="opt1">${a[1][2]}</label>
   </div>
      <div class="each_options">
-         <div id="${a[1][3]}">${a[1][3]}</div>
-
+         <input name="options" type="radio" value="${a[1][3]}"/>
+    <label for="opt1">${a[1][3]}</label>
 
     </div>
     
     
     
-    </div>
+    
      <div class="controls">
      
      <div id="nexts"><button class="btn"id="next">Next</button></div>
     </div></div>
+    </div>
     </div>
     `
     function stopQuestion(){ 
@@ -722,28 +721,31 @@ const showEng=()=>{
     <h1>${a[0]}</h1>
     <div class="container options">
     <div class="each_options">
-      <div class="option" id="${a[1][0]}">${a[1][0]}</div> 
-    </div>
-    </div>
-     <div class="each_options">
-    <div value="${a[1][1]}" class="options" id="${a[1][1]}">${a[1][1]}</div>  <div value="${a[1][1]}" class="options" id="${a[1][1]}">${a[1][1]}</div>
+      <input type="radio" value="${a[1][0]}" name="options"/>
+    <label for="opt1">${a[1][0]}</label> 
     </div>
      <div class="each_options">
-       <div id="${a[1][2]}"/>${a[1][2]}</div>
+    <input name="options" type="radio" value="${a[1][1]}"/>
+    <label for="opt1">${a[1][1]}</label>
+    </div>
+     <div class="each_options">
+       <input name="options" type="radio" value="${a[1][2]}"/>
+    <label for="opt1">${a[1][2]}</label>
   </div>
      <div class="each_options">
-         <div id="${a[1][3]}">${a[1][3]}</div>
-
+         <input name="options" type="radio" value="${a[1][3]}"/>
+    <label for="opt1">${a[1][3]}</label>
 
     </div>
     
     
     
-    </div>
+   
      <div class="controls">
      
      <div id="nexts"><button class="btn"id="next">Next</button></div>
     </div></div>
+    </div>
     </div>
     `
     function stopQuestion(){ 

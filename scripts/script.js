@@ -13,45 +13,24 @@ window.onload=()=>{
     .register('sw.js')
     .then(() => { console.log('Service Worker Registered'); });
 }
-
-// Code to  
-var timer=elem("#timer");
-p("#timer-container").hide();
-p("#sidebar").hide();
-p("#sidebar-header").on("click",()=>{
-      
-       p("#sidebar-header").fadeOut();
-setTimeout(()=>{
-     p("#sidebar").fadeIn();
-     },1000);
-
-    
-});
-p("#close_sidebar").on("click",()=>{
-    p("#sidebar").fadeOut();
-    setTimeout(()=>{
-     p("#sidebar-header").fadeIn();
-     },1000);
-
-   
-});
-
 p("#mathematics").on("click",()=>{
-    p("#sidebar-container").hide();
+    p("#home").hide();
+   
+    
     Peculiar.load();
-   // updateTimer();
+  
     showMaths();
    
 });
 p("#literature").on("click",()=>{
-    p("#sidebar-container").hide();
+    
+    p("#home").hide();
     Peculiar.load();
     //updateTimer();
     showLit()
     });
 p("#chemistry").on("click",()=>{
-    p("#sidebar-container").hide();
-   (function load2(n=5000){
+     function load2(n=5000){
     let h=new Peculiar.int("Indigo",100,"grey","column","20px");
     h.start();
     h.addText("Loading");
@@ -59,20 +38,25 @@ p("#chemistry").on("click",()=>{
     h.animateText();
     h.removeOnTouch();
     h.remove(n)
-})();       
+};  
+load2();     
+    p("#home").hide();
+    /*p("#sidebar-container").hide();
+    p("#overlay").hide();*/
+  
    // updateTimer();
     showChem();
     });
 p("#government").on("click",()=>{
-    p("#sidebar-container").hide();
+    p("#home").hide();
+  
     Peculiar.load();
    // updateTimer();
 showGov();
     });
     
 p("#english").on("click",()=>{
-  //  updateTimer();
-  (function load3(n=5000){
+     (function load3(n=5000){
     let h=new Peculiar.int("orange",100,"grey","column","20px");
     h.start();
     h.addText("Loading");
@@ -81,12 +65,15 @@ p("#english").on("click",()=>{
     h.removeOnTouch();
     h.remove(n)
 })();       
-  p("#sidebar-container").hide();
+  
+    p("#home").hide();
+    
+  //  updateTimer();
+ 
     showEng()
     });
     p("#spelling").on("click",()=>{
-        startSpelling();
-     (function load(n=5000){
+         (function load(n=5000){
     let h=new Peculiar.int("gold",100,"grey","column","20px");
     h.start();
     h.addText("Loading");
@@ -94,7 +81,11 @@ p("#english").on("click",()=>{
     h.animateText();
     h.removeOnTouch();
     h.remove(n)
-})();       p("#sidebar-container").hide();
+})();    
+        p("#home").hide();
+        
+        startSpelling();
+    
         
     });
     

@@ -284,10 +284,10 @@ this.attr=(at,va)=>{
     }
 }
 this.val=function(newVal){
-    if(this.n===null){
+    if(this.n===null||this.n===undefined){
         return false;
     }
-    else if(newVal===null){
+    else if(newVal===null||newVal===undefined){
         return this.n.value;
     }
     else{

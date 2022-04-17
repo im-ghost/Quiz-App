@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://peculiar-codes.github.io/Quiz-App/index.html">
-<meta property="og:image" content="img5.jpg">5
+<meta property="og:image" content="images/img5.j pg ">
 <meta property="og:description" content="A Peculiar quiz app featuring literature, government,mathematical,english, chemistry questions plus a spelling drill">
 <meta property="profile:first_name" content="Adetonwa">
 <meta property="profile:last_name" content="Richard ">
@@ -18,25 +16,27 @@
 <link rel="stylesheet" href="styles/quiz.css"/>
 <link rel="stylesheet" href="styles/style.css"/>
 <meta name="theme-color" content="#B12A34">
-  <meta property="og:image" content="img5.jpg">
-  <link rel="icon" href="img5.jpg">
-  <link rel="stylesheet" href="style.css">
- <script src="scripts/script.js" defer></script>
-<script src="scripts/quiz.js" defer ></script> 
+  <meta property="og:image" content="images/img5.jpg">
+  <link rel="icon" href="icons/favicon.ico">
+  <link rel="stylesheet" href="styles/style.css">
+ 
+<script src="scripts/quiz1.js" defer></script> 
 <script src="scripts/peculiar.js" defer></script>
 <script src="scripts/questions.js" defer></script>
+<script src="scripts/script.js" defer></script>
 <link rel="manifest" href="app.webmanifest">
   
 </head>
 <body>
 <header>
-<div class="sidebar-container" id="sidebar-container">
+<!--<div class="sidebar-container" id="sidebar-container">
 <h1 id="sidebar-header">&equiv;</h1>
 <div id="sidebar" class="sidebar">
+<img class="sidebar_img" src="images/questions.png"/>
 <h1 id="close_sidebar" class="closer">&times;</h1>
 
 <div id="quiz_type" class="quizzes">
-<div id="literature" class="quiz_type">literature</div>
+
 <div id="english" class="quiz_type">English</div>
 <div id="mathematics" class="quiz_type">Mathematics</div>
 <div id="chemistry" class="quiz_type">Chemistry</div>
@@ -45,8 +45,105 @@
 </div>
 </div>
 </div>
-<header>
+<div id="overlay" class="overlay"></div>-->
+</header>
 <main>
+<home id="home">
+<div id="eng_container" class="container_1">
+<figure>
+<img src="images/img9.jpeg" class="img eng_img"/>
+<figcaption>
+<h1>English</h1>
+<p>A simple literature quiz containing ten questions,it test the student understanding of the genres of Literature in the basic level</p>
+<div id="eng" class="quiz_type">
+<button id="english" class="quiz_btn">Start quiz</button>
+</div>
+
+</figcaption>
+</figure>
+</div>
+<div id="lit_container" class="container_1">
+<figure>
+<img src="images/img1.jpeg" class="img lit_img"/>
+<figcaption>
+<h1>Literature</h1>
+<p>A simple literature quiz containing ten questions,it test the student understanding of the genres of Literature in the basic level</p>
+<div id="lit" class="quiz_type">
+<button id="literature" class="quiz_btn">Start quiz</button>
+</div>
+
+</figcaption>
+</figure>
+</div>
+<div id="math_container" class="container_1">
+<figure>
+<img src="images/img2.png" class="img math_img"/>
+<figcaption>
+<h1>Mathematics</h1>
+<p>A simple mathematics quiz containing ten questions,it test the student understanding of the real maths and how to applies to the society </p>
+<div id="math" class="quiz_type">
+<button class="quiz_btn" id="mathematics">Start Quiz</button>
+</div>
+
+</figcaption>
+</figure>
+</div>
+<div id="chem_container" class="container_1">
+<figure>
+<img src="images/img3.png" class="img lit_img"/>
+<figcaption>
+<h1>Chemistry</h1>
+<p>A simple chemistry quiz containing ten questions,it test the student understanding of the basic chemistry</p>
+<div id="chem" class="quiz_type">
+<button id="chemistry" class="quiz_btn">Start Quiz</button>
+</div>
+
+</figcaption>
+</figure>
+</div>
+<div id="gov_container" class="container_1">
+<figure>
+<img src="images/img4.png" class="img gov_img"/>
+<figcaption>
+<h1>Government</h1>
+<p>A simple government quiz containing ten questions,it test the student understanding of the types of government and organs of government</p>
+<div id="gov" class="quiz_type ">
+<button id="government" class="quiz_btn">Start Quiz</button>
+</div>
+
+</figcaption>
+</figure>
+</div>
+<div id="bee_container" class="container_1">
+<figure>
+<img src="images/img5.png" class="img bee_img"/>
+<figcaption>
+<h1>Spelling Bee</h1>
+<p>It a little spelling bee where the student types the words he hear into a input box</p>
+<div id="bee" class="quiz_type">
+<button id="spelling" class="quiz_btn">Start Quiz</button>
+</div>
+
+</figcaption>
+</figure>
+</div>
+</home>
+<div class="question container" id="question">
+</div>
+
+
+<!--
+
+
+
+
+
+
+
+
+
+
+
 <div class="timer-container container" id="timer-container">
 
 <div class="timer" id="timer">
@@ -55,16 +152,16 @@
 <article>
 <div class="question container" id="question">
 </div>
-</article>
+</article>-->
 <article>
 <div class="score-container container" id="score-container">
-<div id="score" class="score">
+<div id="score" class="score innerques">
 </div>
 </article>
 </main>
 <footer>
 </footer>
-<noscript>You need to enable JavaScript in your browser for this app to work</noscript>
+
 </body>
 </html>
 

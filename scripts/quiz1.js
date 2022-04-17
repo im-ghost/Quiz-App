@@ -1,5 +1,5 @@
 var questionEl=document.createElement("div");
-questionEl.classList.add("container");
+questionEl.classList.add("container"); 
 const showLit=()=>{
     var score=0;
   var i=0;
@@ -53,6 +53,12 @@ function getQuestion(){
            setTimeout(()=>{
       
            p("#score").fadeIn("flex");
+           p('#score-container').show("block");
+p("#score").addClass("innerques");
+p("#main").hide();
+           p('#score-container').show("block");
+p("#score").addClass("innerques");
+p("#main").hide();
   p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
   p("#main_score").text(score)
   },1100);
@@ -70,20 +76,20 @@ function getQuestion(){
       
        if(i<Object.values(literature.questions).length-1){
             if(p("input[type=radio][name=options]:checked").val()!==null){
-      alert(p("input[type=radio][name=options]:checked").val());
+      //alert(p("input[type=radio][name=options]:checked").val());
         
       var answer=p("input[type=radio][name=options]:checked").val();
-    alert(answer);
+    //alert(answer);
     
       
       if(answer===correctAnswer){
           score++;
-          alert("Correct");
+          //alert("Correct");
       }
      
       }
       else{
-          alert("null");
+          //alert("null");
       }
            i++;
            
@@ -229,6 +235,9 @@ function getQuestion(){
            setTimeout(()=>{
       
            p("#score").fadeIn("flex");
+           p('#score-container').show("block");
+p("#score").addClass("innerques");
+p("#main").hide();
   p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
   p("#main_score").text(score)
   },1100);
@@ -246,20 +255,20 @@ function getQuestion(){
       
        if(i<Object.values(government.questions).length-1){
             if(p("input[type=radio][name=options]:checked").val()!==null){
-      alert(p("input[type=radio][name=options]:checked").val());
+      //alert(p("input[type=radio][name=options]:checked").val());
         
       var answer=p("input[type=radio][name=options]:checked").val();
-    alert(answer);
+    //alert(answer);
     
       
       if(answer===correctAnswer){
           score++;
-          alert("Correct");
+          //alert("Correct");
       }
      
       }
       else{
-          alert("null");
+          //alert("null");
       }
            i++;
            
@@ -405,6 +414,9 @@ function getQuestion(){
            setTimeout(()=>{
       
            p("#score").fadeIn("flex");
+           p('#score-container').show("block");
+p("#score").addClass("innerques");
+p("#main").hide();
   p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
   p("#main_score").text(score)
   },1100);
@@ -422,20 +434,20 @@ function getQuestion(){
       
        if(i<Object.values(mathes.questions).length-1){
             if(p("input[type=radio][name=options]:checked").val()!==null){
-      alert(p("input[type=radio][name=options]:checked").val());
+      //alert(p("input[type=radio][name=options]:checked").val());
         
       var answer=p("input[type=radio][name=options]:checked").val();
-    alert(answer);
+    //alert(answer);
     
       
       if(answer===correctAnswer){
           score++;
-          alert("Correct");
+          //alert("Correct");
       }
      
       }
       else{
-          alert("null");
+          //alert("null");
       }
            i++;
            
@@ -581,6 +593,9 @@ const showChem=()=>{
            setTimeout(()=>{
       
            p("#score").fadeIn("flex");
+           p('#score-container').show("block");
+p("#score").addClass("innerques");
+p("#main").hide();
   p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
   p("#main_score").text(score)
   },1100);
@@ -598,20 +613,20 @@ const showChem=()=>{
       
        if(i<Object.values(chemistry.questions).length-1){
             if(p("input[type=radio][name=options]:checked").val()!==null){
-      alert(p("input[type=radio][name=options]:checked").val());
+      //alert(p("input[type=radio][name=options]:checked").val());
         
       var answer=p("input[type=radio][name=options]:checked").val();
-    alert(answer);
+    //alert(answer);
     
       
       if(answer===correctAnswer){
           score++;
-          alert("Correct");
+          //alert("Correct");
       }
      
       }
       else{
-          alert("null");
+          //alert("null");
       }
            i++;
            
@@ -706,6 +721,7 @@ const showChem=()=>{
 }
 const showEng=()=>{
     var i=0;
+    var score=0;
     questionEl.innerHTML="";
     setTimeout(()=>{
     getQuestion();
@@ -758,6 +774,9 @@ const showEng=()=>{
            setTimeout(()=>{
       
            p("#score").fadeIn("flex");
+           p('#score-container').show("block");
+p("#score").addClass("innerques");
+p("#main").hide();
   p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
   p("#main_score").text(score)
   },1100);
@@ -775,20 +794,20 @@ const showEng=()=>{
       
        if(i<Object.values(english.questions).length-1){
             if(p("input[type=radio][name=options]:checked").val()!==null){
-      alert(p("input[type=radio][name=options]:checked").val());
+      //alert(p("input[type=radio][name=options]:checked").val());
         
       var answer=p("input[type=radio][name=options]:checked").val();
-    alert(answer);
+    //alert(answer);
     
       
       if(answer===correctAnswer){
           score++;
-          alert("Correct");
+          //alert("Correct");
       }
      
       }
       else{
-          alert("null");
+          //alert("null");
       }
            i++;
            
@@ -995,12 +1014,12 @@ setTimeout(()=>{
 elem("#checkSpell").addEventListener("click",()=>{
     if(rand===spellValue.value){
         score++;
-        alert("Correct");
+        //alert("Correct");
         spellValue.value="";
         speak();
     }
     else{
-        alert("Wrong");
+        //alert("Wrong");
     }
 });
 },200);

@@ -54,8 +54,15 @@ p("#government").on("click",()=>{
    // updateTimer();
 showGov();
     });
-    
+document.querySelector("#english").addEventListener ("click",()=>{
+  
+})   
 p("#english").on("click",()=>{
+     p("#home").hide();
+    
+  //  updateTimer();
+ 
+    showEng()
      (function load3(n=5000){
     let h=new Peculiar.int("orange",100,"grey","column","20px");
     h.start();
@@ -66,11 +73,7 @@ p("#english").on("click",()=>{
     h.remove(n)
 })();       
   
-    p("#home").hide();
-    
-  //  updateTimer();
- 
-    showEng()
+   
     });
     p("#spelling").on("click",()=>{
          (function load(n=5000){

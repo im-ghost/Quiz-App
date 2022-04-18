@@ -15,6 +15,8 @@ body{
     padding:0;
     scroll-snap-type:y proximity;
     scroll-behaviour:smooth;
+    font-family:'Marianda','Pacifico',serif;
+    
    /*background-image:linear-gradient(gold,yellow,green,red);*/
 } 
 .scroll{
@@ -23,6 +25,7 @@ body{
 }
 .scroll.scrolled{
     opacity:1;
+     font-family:'Aladin', serif;
 }
 .scrolled.fade-in {
   animation: fade-in 1s ease-in-out both;

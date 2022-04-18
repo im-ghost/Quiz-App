@@ -59,7 +59,7 @@ p("#main").hide();
            p('#score-container').show("block");
 p("#score").addClass("innerques");
 p("#main").hide();
-  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
+  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div> <button class="btn" onclick="location.reload()">Home</button>`);
   p("#main_score").text(score)
   },1100);
        },1);
@@ -183,7 +183,7 @@ p("#main").hide();
    elem("#question").appendChild(questionEl);
 }
 const showGov=()=>{
-    
+    var score=0;
     var i=0;
     setTimeout(()=>{
     getQuestion();
@@ -238,7 +238,7 @@ function getQuestion(){
            p('#score-container').show("block");
 p("#score").addClass("innerques");
 p("#main").hide();
-  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
+  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div> <button class="btn" onclick="location.reload()">Home</button>`);
   p("#main_score").text(score)
   },1100);
        },1);
@@ -364,6 +364,7 @@ p("#main").hide();
 const showMaths=()=>{
     questionEl.innerHTML="";
     var i=0;
+    var score=0;
     setTimeout(()=>{
     getQuestion();
     },5000);
@@ -417,7 +418,7 @@ function getQuestion(){
            p('#score-container').show("block");
 p("#score").addClass("innerques");
 p("#main").hide();
-  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
+  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div> <button class="btn" onclick="location.reload()">Home</button>`);
   p("#main_score").text(score)
   },1100);
        },1);
@@ -541,6 +542,7 @@ p("#main").hide();
  elem("#question").appendChild(questionEl);
 }
 const showChem=()=>{
+    var score=0;
     var i=0;
     questionEl.innerHTML="";
     setTimeout(()=>{
@@ -596,7 +598,7 @@ const showChem=()=>{
            p('#score-container').show("block");
 p("#score").addClass("innerques");
 p("#main").hide();
-  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
+  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div> <button class="btn" onclick="location.reload()">Home</button>`);
   p("#main_score").text(score)
   },1100);
        },1);
@@ -777,7 +779,7 @@ const showEng=()=>{
            p('#score-container').show("block");
 p("#score").addClass("innerques");
 p("#main").hide();
-  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div>`);
+  p("#score").html(`<div><h2>Time is up</h2>Your score is <h1 id="main_score">${score}</h1></div> <button class="btn" onclick="location.reload()">Home</button>`);
   p("#main_score").text(score)
   },1100);
        },1);
@@ -1027,6 +1029,7 @@ function EndQuiz(){
     textForm.innerHTML=`
     <div class="submit" id="submit">
     Time is up your score is ${score}
+    <button class="btn" click="location.reload()">Home</button>
     </div>
     `
 }
